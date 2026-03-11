@@ -1,0 +1,130 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f0f0f0;
+  color: #333;
+}
+
+#toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 16px;
+  background: #e8e8e8;
+  border-bottom: 1px solid #ccc;
+}
+
+#toolbar label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#toolbar select {
+  padding: 2px 6px;
+  font-size: 13px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background: #fff;
+}
+
+#main {
+  display: flex;
+  padding: 10px 16px;
+  gap: 16px;
+}
+
+#charts {
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+#controls {
+  width: 260px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+.chart-panel {
+  width: 420px;
+}
+
+.chart-panel h3 {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 2px;
+  color: #333;
+  font-weight: 600;
+}
+
+svg {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.axis text { font-size: 11px; }
+.axis-label { font-size: 12px; fill: #333; }
+
+circle.dot {
+  fill: #1f77b4;
+  fill-opacity: 0.55;
+  stroke: none;
+}
+
+line.reg {
+  stroke: red;
+  stroke-width: 2;
+}
+
+.ctrl-group, .radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ctrl-group .title,
+.radio-group .title {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+.range-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.range-row .range-label {
+  width: 34px;
+  font-size: 11px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #999;
+  padding: 2px 2px;
+  border-radius: 2px;
+}
+
+.range-row input[type="range"] {
+  flex: 1;
+  cursor: pointer;
+}
+
+.radio-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.radio-row label {
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+}
